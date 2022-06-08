@@ -1,0 +1,2 @@
+adafruit-circuitpython-mpu6050
+websockets

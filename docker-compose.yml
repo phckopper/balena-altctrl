@@ -1,0 +1,13 @@
+version: '2'
+services:
+  balena-altctrl:
+    build: .
+    privileged: true
+    labels:
+      io.balena.features.kernel-modules: '1'
+      io.balena.features.sysfs: '1'
+      io.balena.features.supervisor-api: '1'
+    network_mode: host
+    expose:
+      - '34567'
+      
